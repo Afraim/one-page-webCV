@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Md. Afraim Bin Zahangir">
+        <title>
+            Afraim Bin Zahangir
+        </title>
+        <link rel="stylesheet" href="afraim-style.css">
+    </head>
+    
+    <body style="background-color: rgb(235, 243, 253);">
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+        <div class="toTop"><a href="#" id="TOP">⬆</a></div>
+        <div class="sidebar">
+            <div class="sidebar-Item">
+                <a class="contact-feedback" href="#Biography">Biography</a>
+            </div>
+            <div class="sidebar-Item">
+                <a class="contact-feedback" href="#Work">Work</a>
+            </div>
+            <div class="sidebar-Item">
+                <a class="contact-feedback" href="#Awards">Awards</a>
+            </div>
+            <div class="sidebar-Item">
+                <a class="contact-feedback" href="#Certificates">Certificate</a>
+            </div>
+            <div class="sidebar-Item">
+                <a class="contact-feedback" href="#Education">Education</a>
+            </div>
+            <div class="sidebar-Item">
+                <a class="contact-feedback" href="#Extra">Extra</a>
+            </div>
+        </div>
+        
+            <h1 class="title" >
+                Personal Information
+            </h1>
+    
+           <div class="design">
+            <div style="text-align: center;">
+                <img class="profil-image" src="./image/pic.jpg"><br>
+                <h2 >Md. Afraim Bin Zahangir</h2>
+                <h6 style="margin-top: -10px;">Student | Department of CSE, ULAB</h6>
+                
+                <div class="flex" >
+                    <div style="text-align: left;">
+                        <address>Current Address    : Ukilpara, Naogaon</address>
+                        <address>Permanent Address    : Ukilpara, Naogaon</address>
+                    </div>
+                    
+                    <div style="text-align: left;">
+                        <i>Mobile : <a href="tel:01715169263">01715169263</a></i><br>
+                        <i>email    :</i> <i><a href="mailto:afraim.zahangir.cse@ulab.edu.bd"> afraim.zahangir.cse@ulab.edu.bd</a></i><br>
+                        <i>alternet email    :</i> <i><a href="mailto:afraim.zahangir@ieee.org"> afraim.zahangir@ieee.org</a></i><br>
+                    </div>
+                </div> 
+                <div class="flex" style="font-weight: bold;" style="margin-top: 1rem;">
+                    
+                    <form action="https://www.facebook.com/afraim.zahangir/" target="_blank">
+                        <button type="submit" style="border: 0;"> <img src="./image/facebookicon.png" alt="facebook"> </button>
+                    </form>
+                    <form action="https://www.linkedin.com/in/afraim-zahangir/" target="_blank">
+                        <button type="submit" style="border: 0;"> <img src="./image/linkedin.png" alt="linkedin"></button>
+                    </form>
+                    <form action="https://github.com/Afraim" target="_blank">
+                        <button type="submit" style="border: 0;"> <img src="./image/git.png" alt="Github"></button>
+                    </form>
+                   
+                </div>           
+            </div>
+    
+        </div>
+    
+        
+        
+    
+    <div class="objective" title="Career objective">
+        <h2 class="title" id="Biography"> Biography:</h2>
+           <div class="details">
+                <p>
+                A student of Computer Science and Engineering with experience of being Teaching Assistant at Department of CSE, Univeersity of Liberal Arts Bangladesh. 
+                Also have experience in creating and presenting powerpoints, conducting online class using google classroom and other platforms. 
+                Strongly believe in adaptation and on the job training. 
+                </p> 
+           </div>
+    </div>
+
+    <div class="objective" title="Working experience">
+        <h2 class="title" id="Work"> Working Experience</h2>
+        <div class="details">
+            <div class="flex-container1">
+                <div class="flex-item" style="height: 8rem;">
+                    <h3 style="text-transform: capitalize;">TEACHING ASSISTANT</h3>
+                    <div class="flex">
+                        <div>
+                            Department of CSE, ULAB
+                        </div>
+                        <div>
+                            November 2020 - February 2021
+                        </div>                           
+                    </div> 
+                </div>
+            </div>
+            <div class="flex-container1">
+                <div class="flex-item" style="height: 8rem;">
+                    <h3 style="text-transform: capitalize;">PEER MENTOR
+                    </h3>
+                    <div class="flex">
+                        <div>
+                            ULAB Student Affairs Office
+                        </div>
+                        <div>
+                            2019-2020
+                        </div>                           
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title" id="Awards">
+        Awards
+    </h2>
+    <div class="grid-container">
+        <div class="grid-item" draggable="false">
+                <img class="project-image" src="./image/pic2.jpg" alt="Portable Security device" draggable="false">
+                <h3 class="project-name" title= "name">Portable Security Device</h3>
+                <p class="project-detials" title="Details">A small portable device that acts as a security device for a small room or cabinet.
+                                                           Using the LDR and visible light technology this little device can alart the whole area if someone opens the door (or window).
+                                                           We had recived third price</p>
+                <p class="project-team" title="Team Member">Afraim, Ashabori, Mehedi, Ferdous, Monjurul, Rubaya (Students of ULAB) </p>
+        </div>
+        <div class="grid-item" draggable="false">
+            <img class="project-image" src="./image/pic1.jpg" alt="Portable Security device" draggable="false">
+            <h3 class="project-name" title= "name">Farming 2.0</h3>
+            <p class="project-detials" title="Details">An automated device that detects the water presence and absence in a flower top and controls the flow of water to the top from the tank.</p>
+            <p class="project-team" title="Team Member"><br><br>Afraim Zahangir, Al Imran Fakir, Faria Tasnim Tanima </p>
+        </div>
+    </div>
+    <h2 class="title" id="Certificates"> Certificates</h2>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade" style="display: block;">
+          <div class="numbertext">1 / 4</div>
+          <img src="image/p1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="image/p2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="image/p3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="image/p4.jpg" style="width:100%">
+          </div>
+        
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div></div>
+
+
+    <div class="objective" title="Educational Qualification">
+        <h2 class="title" id="Education"> Educational Qualification</h2>
+        <div class="details">
+            <div class="flex-container2">
+                <div class="flex-item">
+                    <h3>Bachelor of Science (B.Sc.)</h2>
+                    <h5 style="color: #444;">University of Liberal Arts Bangladesh</h4>
+                        Computer Science and Engineering
+                    <div class="flex">
+                        <div>
+                            2018 - Present
+                        </div>
+                        <div>
+                            CGPA - 3.81
+                        </div>                           
+                    </div>  
+                </div>
+            </div>
+            <div class="flex-container3">
+                <div class="flex-item">
+                    <h3>Higher Secondary Certificate (H.S.C)</h2>
+                    <h5 style="color: #444;">Dhaka Residential Model College</h4>
+                        Science
+                    <div class="flex">
+                        <div>
+                            2017
+                        </div>
+                        <div>
+                            GPA - 4.17
+                        </div>                           
+                    </div>  
+                </div>
+            </div>
+            <div class="flex-container3">
+                <div class="flex-item">
+                    <h3>Secondary School Certificate (S.S.C)</h2>
+                    <h5 style="color: #444;">BIAM Laboratory School, Naogaon</h4>
+                        Science
+                    <div class="flex">
+                        <div>
+                            2015
+                        </div>
+                        <div>
+                            GPA - 5.00
+                        </div>                           
+                    </div>  
+                </div>
+            </div>
+
+            </div>
+        </div> 
+
+        <div class="objective" title="Extra Curricular Activities">
+            <h2 class="title" id="Extra"> Extra Curricular Activities</h2>
+            <div class="details">
+                <div class="flex-container1">
+                    <div class="flex-item" style="height: 8rem;">
+                        <h3>Chairperson</h3>
+                        <div class="flex">
+                            <div>
+                                IEEE ULAB Student Branch
+                            </div>
+                            <div>
+                                2021-2022
+                            </div>                           
+                        </div> 
+                    </div>
+                </div>
+                <div class="flex-container1">
+                    <div class="flex-item" style="height: 8rem;">
+                        <h3>Secretary</h3>
+                        <div class="flex">
+                            <div>
+                                IEEE ULAB Student Branch
+                            </div>
+                            <div>
+                                2020-2021
+                            </div>                           
+                        </div> 
+                    </div>
+                </div>
+                <div class="flex-container1">
+                    <div class="flex-item" style="height: 8rem;">
+                        <h3>Mentor</h3>
+                        <div class="flex">
+                            <div>
+                                ULAB ROBOTICS WING, ULAB ELECTRONCIS CLUB
+                            </div>
+                            <div>
+                                2020-2020
+                            </div>                           
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+    </body>
+    <footer style="text-align: center;">Property of @AfraimZahangir </footer>
+</html>

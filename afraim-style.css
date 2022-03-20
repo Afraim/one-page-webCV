@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+  }
+  .mySlides {display: none}
+.backbtn a{
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: -1em;
+
+}
+.backbtn:hover a{
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(0, 102, 255);
+    transition: all 250ms ease-in-out;
+    transition-duration: 250ms;
+}
+
+.button{
+    background-color: transparent;
+    color: rgb(0,0,0);
+    font-weight: bolder;
+    font-size: 100%;
+    border-radius: 1vw;
+}
+.title{
+    text-align: center;
+    background-color: #ffde88;
+    height: 1.5em;
+    border: #222 5px;
+    text-shadow: 2px 2px 3px rgb(48, 48, 48);
+}
+
+h1.title{
+    text-align: center;
+    background-color: #ffde88;
+    height: 1.5em;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgb(48, 48, 48);
+}
+.design{
+    background: rgb(255,248,230);
+    background: linear-gradient(66deg, rgba(255,248,230,1) 0%, rgba(255,195,39,0.896796218487395) 100%);
+    
+    width: 100%;
+    height: auto;
+}
+
+.profil-image{
+    height: 300px;
+    width: auto;
+    border-radius: 10em;
+    box-shadow: .5em 1em 50px #ffffff;
+}
+
+
+.objective{
+    margin-top: 3rem;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.flex form button{
+    cursor: pointer;
+    border-radius: 2rem;
+    border: 15px;
+    border-style: solid;
+    border-color: black;
+    background-color: #faebd7;
+    width: 5em;
+    height: 5em;
+}
+
+.details{
+    font-family: Georgia;
+    text-align: justify;
+    font-size: medium;
+    margin: 1rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 4rem;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+.grid-item{
+    width: 400px;
+    height: 600px;
+    background-color: #fdf3d8;
+    border-radius: 2rem;
+}
+.project-image{
+    width: 100%;
+    height: auto;
+    border-radius: 2rem 2rem 0 0;
+    
+}
+.project-name{
+    text-align: center;
+
+}
+.project-detials{
+    text-align: justify;
+    margin: 1rem;
+
+}
+.project-team{
+    text-align: center;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+.flex-item{
+    width: 80vw;
+    height: 11rem;
+    background-color: #fdf3d8;
+    margin: 2em 1em 0 10%;
+    padding: .5em 0 0 2em;
+    border-radius: 50px;
+}
+
+ #TOP{
+    width: 70px;
+    height: 70px;
+    z-index: 4;
+    background-color: springgreen;
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+}
+
+
+
+.sidebar{
+    position: fixed;
+    right: 0;
+    top: calc(40% - 245px);
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeee088;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgb(e 0 0 / 20%);
+    font-size: small;
+}
+.sidebar-Item{
+    position: relative;
+    
+    width: 2em;
+    height: 100px;
+    transition: 200ms ease-in-out;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+.sidebar-Item .contact-feedback{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    top: 0;
+    left: 130%;
+    height: 3em;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100px;
+    text-transform: lowercase;
+    transition: 200ms ease-in-out;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+.sidebar-Item:hover{
+    background-color: #e5ba2e9f;
+    width: 3em;
+    transition: 200ms ease-in-out;
+    transition-property: all;
+    transition-duration: 400ms;
+}
+.sidebar-Item:hover .contact-feedback{
+    left: 100%;
+    transition: 200ms ease-in-out;
+    transition-property: all;
+    transition-duration: 500ms;
+
+}
+
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 2px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
